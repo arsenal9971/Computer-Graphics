@@ -28,10 +28,6 @@ var makePath = function(x) {
 	};
 }
 
-var aver = function(z) {
-	return z;
-};
-
 // the main() function is called when the HTML document is loaded
 var main = function() {
 
