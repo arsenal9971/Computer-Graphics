@@ -1,0 +1,43 @@
+<html>
+<head>
+
+    <title>CG1 Exercise 01 - Robot</title>
+
+    <!-- import main JavaScript module using RequireJS -->
+    <script src="js/three.min.js"></script>
+    <script src="js/stats.min.js"></script>
+    <script src="js/controls/TrackballControls.js"></script>
+    <script src="js/controls/OrbitControls.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/robot.js"></script>
+
+    <script src="js/scenecontroller.js"></script>
+    <script src="js/htmlcontroller.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- import style sheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+</head>
+
+<!-- call the main() function once the document is being loaded -->
+<body onLoad="main()">
+    <!-- this element will be used to diplay errors -->
+    <pre id="error"></pre>
+    <div id="instructions">
+        <table>
+            <tr><td><kbd>Mouse</kbd></td><td>change camera position</td></tr>
+            <tr><td><kbd>Arrow Keys</kbd></td><td>rotate selected object</td></tr>
+            <tr><td><kbd>r</kbd></td><td>reset</td></tr>
+            <tr><td><kbd>e</kbd></td><td>select object</td></tr>
+            <tr><td><kbd>a</kbd></td><td>select previous sibling</td></tr>
+            <tr><td><kbd>d</kbd></td><td>select next sibling</td></tr>
+            <tr><td><kbd>w</kbd></td><td>select parent</td></tr>
+            <tr><td><kbd>s</kbd></td><td>select first child</td></tr>
+            <tr><td><kbd>c</kbd></td><td>toggle axis visibility</td></tr>
+            <tr><td><kbd>k</kbd></td><td>play animation</td></tr>
+            <tr><td><kbd>h</kbd></td><td>show help</td></tr>
+        </table>
+    </div>
+</body>
+</html>

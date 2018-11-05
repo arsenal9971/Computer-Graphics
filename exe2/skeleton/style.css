@@ -1,0 +1,27 @@
+/* default: white background, sans serif font */
+body {
+    font-family:Arial,Helvetica;
+    background-color:white;
+    margin: 0px;
+    border: 0px;
+}
+
+/* region to display an error */
+#error {
+    color:white;
+    font-weight:bold;
+    background-color:red;
+    display:none;
+}
+
+
+#instructions {
+    position: fixed;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(230, 230, 230, 0.7);
+    border-color: rgb(240, 240, 160);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(0.1, 0.1, 0.1);
+}
