@@ -1,0 +1,4 @@
+If one is just using plain the window.console.log to print on the console the console will respect the order of the instructions as they appear on the script (the queue), so the message "This is the start." will appear just after the last instruction in the script (in this case window.console.log("path 3 is " + path3() );).
+
+In the case of the message "This is a msg from call back.", it is called using the setTimeout function using as time argument 0, this will give a minimum delay after which the message will be pushed in the queue, since after this we have the instruction window.console.log('This is just a message.');, the message "This is a msg from call back" will be added to the queue just after the last message (since the time argument is 0); that is the reason it appears on the console output at the end even in the script is not the final instruction.
+
